@@ -2,6 +2,8 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaClient } from "@prisma/client";
 
+console.log("NEXTAUTH_SECRET:", process.env.NEXTAUTH_SECRET);
+
 const prisma = new PrismaClient();
 
 export default NextAuth({
