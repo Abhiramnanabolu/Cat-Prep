@@ -43,4 +43,5 @@ export default NextAuth({
       return baseUrl + "/";
     },
   },
+  secret:process.env.NEXTAUTH_SECRET,
 });
